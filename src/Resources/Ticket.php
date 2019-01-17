@@ -13,6 +13,7 @@ use Freshdesk\Resources\Traits\CreateTrait;
 use Freshdesk\Resources\Traits\DeleteTrait;
 use Freshdesk\Resources\Traits\UpdateTrait;
 use Freshdesk\Resources\Traits\ViewTrait;
+use Freshdesk\Resources\Traits\CreateWithOutboundMail;
 
 /**
  * Ticket resource
@@ -24,7 +25,7 @@ use Freshdesk\Resources\Traits\ViewTrait;
 class Ticket extends AbstractResource
 {
 
-    use AllTrait, CreateTrait, ViewTrait, UpdateTrait, DeleteTrait;
+    use AllTrait, CreateTrait, ViewTrait, UpdateTrait, DeleteTrait, CreateWithOutboundMail;
 
     /**
      * The resource endpoint
