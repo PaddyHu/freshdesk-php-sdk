@@ -283,7 +283,7 @@ class Api
     /**
      * @internal
      */
-    private function setupResources()
+    protected function setupResources()
     {
         //People
         $this->agents = new Agent($this);
